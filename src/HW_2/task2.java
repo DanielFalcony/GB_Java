@@ -1,10 +1,12 @@
+// Напишите метод, который определит тип (расширение) файлов из текущей папки и выведет в консоль результат вида
+//1 Расширение файла: txt
+//2 Расширение файла: pdf
+//3 Расширение файла:
+//4 Расширение файла: jpg
+
 package HW_2;
 
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class task2 {
     public static void main(String[] args) {
@@ -14,8 +16,11 @@ public class task2 {
         path = filePath.list();
         assert path != null;
         for (String pathname : path) {
+            int indexDot = pathname.indexOf(".");
+            System.out.println(pathname.substring(indexDot + 1));
             allFiles.append(pathname).append(" ");
         }
-        // как сделать перебор списка (строка), найти точку и вырезать значение?
+        System.out.println(allFiles);
+        // как отделить расширения списка "allFiles"?
     }
 }
