@@ -12,7 +12,10 @@ public class task1 {
             list.add(i);
         }
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) % 2 == 0) list.remove(i);
+            if (list.get(i) % 2 == 0) {
+                list.remove(i);
+                i--;
+            }
         }
         System.out.println(list);
     }
