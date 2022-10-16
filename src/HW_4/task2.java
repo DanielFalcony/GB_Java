@@ -5,5 +5,19 @@
 
 package HW_4;
 
+
 public class task2 {
+    public static void main(String[] args) {
+        MyLinkedList list = new MyLinkedList();
+
+        list.enqueue(3);
+        list.enqueue(5);
+        list.enqueue(8);
+        System.out.println(list.first());
+        System.out.println(list.first());
+        System.out.println(list.dequeue());
+        System.out.println(list.dequeue());
+        System.out.println(list.dequeue());
+//        System.out.println(list.dequeue()); - Exception
+    }
 }
