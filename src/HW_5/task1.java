@@ -6,8 +6,10 @@ public class task1 {
     public static void main(String[] args) {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Иванов Иван Иванович", "89258888875");
-        phoneBook.add("Иванов Иван Иванович", "89253338875");
-        phoneBook.add("Смирнов Дмитрий Дмитриевич", "89258288875");
+        phoneBook.add("Петров Петр Петрович", "89258888875");
+        phoneBook.add("Иванов Иван Иванович", "89258288875");
+        phoneBook.add("Иванов Иван Иванович", "89110000075");
+        phoneBook.add("Романов Дмитрий Николаевич", "8903545075");
         phoneBook.printPerson();
     }
 }
