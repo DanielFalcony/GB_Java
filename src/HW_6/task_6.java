@@ -9,9 +9,9 @@ public class task_6 {
     public static void main(String[] args) {
         String[] modelIs = new String[]{"Asus", "Dell", "HP", "Acer"};
         String[]processorIs = new String[]{"Intel", "AMD"};
-        int[] ramIs = new int[]{8, 16, 32}; // ГБ
-        int[] hardDriveVolume = new int[]{512, 1024, 2048}; // ГБ
-        double[] diagonalIs = new double[]{14, 16.5, 17}; // Дюйм
+        int[] ramIs = new int[]{8, 16, 32};
+        int[] hardDriveVolume = new int[]{512, 1024, 2048};
+        double[] diagonalIs = new double[]{14, 16.5, 17};
 
         Map<Notebook, Integer> notebooks = new HashMap<>();
 
@@ -33,11 +33,11 @@ public class task_6 {
         }
 
         Scanner iScanner = new Scanner(System.in);
-        System.out.print("Мин. ОЗУ: ");
+        System.out.print("Мин. ОЗУ (8-32 ГБ): ");
         var minRAM = iScanner.nextInt();
-        System.out.print("Мин. объем памяти: ");
+        System.out.print("Мин. объем памяти (512-2048 ГБ): ");
         var minSSDVolume = iScanner.nextInt();
-        System.out.print("Мин. диагональ: ");
+        System.out.print("Мин. диагональ (14-17 дюймов): ");
         var minDiagonal = iScanner.nextInt();
 
         Notebook search = new Notebook("", "", minRAM, minSSDVolume, minDiagonal);
