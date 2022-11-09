@@ -46,11 +46,11 @@ public class task_6 {
             var a = item.getKey();
             if (a.ifMoreOrEqualNotebook(search)){
                 System.out.println(a);
-                System.out.println(String.format("В наличии: %d\n", item.getValue()));
+                System.out.printf("В наличии: %d\n%n", item.getValue());
                 System.out.println("------------------");
                 count++;
             }
         }
-        System.out.println(String.format("Ноутбуков подходящих под критерии: %d,", count));
+        System.out.printf("Ноутбуков подходящих под критерии: %d,%n", count);
     }
 }
